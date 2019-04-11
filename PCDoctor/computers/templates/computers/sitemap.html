@@ -1,14 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<title>Site Map - Site Map | Computers - Free Website Template from Templates.com</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="Place your description here" />
-<meta name="keywords" content="put, your, keyword, here" />
-<meta name="author" content="Templates.com - website templates provider" />
-<link href="style.css" rel="stylesheet" type="text/css" />
-<link href="layout.css" rel="stylesheet" type="text/css" />
-</head>
+{% extends "computers/about-us.html" %}
+{% block content %}
+
 <body id="page6">
 <div class="tail-top-right"></div>
 <div id="main">
@@ -78,12 +70,4 @@
     </div>
   </div>
   <!-- footer -->
-  <div id="footer">
-    <div class="indent">
-      <div class="fleft">Copyrights - Type in Your Name</div>
-      <div class="fright">Designed by: <a href="http://www.templates.com"><img alt="website templates" src="images/templates-logo.gif" title="templates.com - website templates provider" /></a>&nbsp; Your <a href="http://www.templates.com/product/3d-models/" title="templates.com - website templates provider">3D Models</a> Marketplace</div>
-    </div>
-  </div>
-</div>
-<div style="width:600px; position:relative;left:50%;margin-left:-300px; font-size:12px; text-align:center"><a href="http://www.kvchost.com"><img src="http://www.kvchost.com/images/logo/tlogo.png" alt="WEB HOSTING"></a> <a href="http://www.kvchost.com">Cheap Hosting</a> by KVCHOST.COM</div></body>
-</html>
+  {% endblock %}

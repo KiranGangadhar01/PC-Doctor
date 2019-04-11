@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en" lang="en">
 <head>
 <title>About Us - PC Doctor</title>
@@ -6,9 +7,12 @@
 <meta name="description" content="Place your description here" />
 <meta name="keywords" content="put, your, keyword, here" />
 <meta name="author" content="Templates.com - website templates provider" />
-<link href="style.css" rel="stylesheet" type="text/css" />
-<link href="layout.css" rel="stylesheet" type="text/css" />
+<link href="{% static style.css %}" rel="stylesheet" type="text/css" />
+<link href="{% static layout.css %}" rel="stylesheet" type="text/css" />
 </head>
+
+{% block content %}
+
 <body id="page2">
 <div class="tail-top-right"></div>
 <div id="main">
@@ -96,6 +100,9 @@
     </div>
   </div>
   <!-- footer -->
+
+{% endblock %}
+  
   <div id="footer">
     <div class="indent">
       <div class="fleft">Copyrights - PC Doctor</div>
