@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 
 <head>
@@ -8,14 +9,14 @@
   <title>Offer-Zone</title>
 
   <!-- Bootstrap -->
-  <link href="css-blog/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css-blog/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/css/font-awesome.css" />
-  <link href="css-blog/css/default.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css-blog/css/animate.css" />
+  <link href="{% static 'css-blog/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css-blog/css/font-awesome.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/css/font-awesome.css' %}" />
+  <link href="{% static 'css-blog/css/default.css' %}" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css-blog/css/animate.css' %}" />
   <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css-blog/css/isotope.css" media="screen" />
-  <link rel="stylesheet" href="css-blog/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css-blog/css/isotope.css' %}" media="screen" />
+  <link rel="stylesheet" href="{% static 'css-blog/css/style.css' %}">
   <!-- =======================================================
     Theme Name: Hidayah
     Theme URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
