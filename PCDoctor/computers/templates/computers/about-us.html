@@ -1,97 +1,63 @@
 <!DOCTYPE html>
-{% load staticfiles %}
-<html lang="en" lang="en">
+<html lang="en">
+
 <head>
-<title>About Us - PC Doctor</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="Place your description here" />
-<meta name="keywords" content="put, your, keyword, here" />
-<meta name="author" content="Templates.com - website templates provider" />
-<link href="{% static style.css %}" rel="stylesheet" type="text/css" />
-<link href="{% static layout.css %}" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About-Us</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:300,400|Questrial|Satisfy">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- =======================================================
+    Theme Name: Laura
+    Theme URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
 </head>
 
-{% block content %}
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="myFunction()">
+  <div class="header">
+    <div class="bg-color">
+      <header id="main-header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#lauraMenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-<body id="page2">
-<div class="tail-top-right"></div>
-<div id="main">
-  <!-- header -->
-  <div id="header">
-    <ul class="site-nav">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about-us.html" class="act">About-us</a></li>
-      <li><a href="articles.html">Articles</a></li>
-      <li><a href="contact-us.html">Contact-us</a></li>
-      <li class="last"><a href="sitemap.html">Sitemap</a></li>
-    </ul>
-    <div class="logo"><a href="home.html"><img src="images/logo.gif" alt="" /></a></div>
-  </div>
-  <!-- content -->
-  <div id="content">
-    <div class="wrapper">
-      <div class="col-1">
-        <div class="box">
-          <div class="border-top">
-            <div class="border-right">
-              <div class="border-bot">
-                <div class="border-left">
-                  <div class="inner">
-                    <div class="title"><img src="images/extra-title.gif" alt="" /></div>
-                    <ul class="list">
-                      <li><span><a href="#">Motherboards</a></span></li>
-                      <li><span><a href="#">Processors</a></span></li>
-                      <li><span><a href="#">Desktops</a></span></li>
-                      <li><span><a href="#">Monitors</a></span></li>
-                      <li><span><a href="#">Laptops &amp; Notebooks</a></span></li>
-                      <li><span><a href="#">Accessories</a></span></li>
-                      <li><span><a href="#">Palm Operating System</a></span></li>
-                      <li><span><a href="#">Pocket PC Operating System</a></span></li>
-                      <li><span><a href="#">All Handhelds &amp; PDAs</a></span></li>
-                      <li><span><a href="#">Business &amp; Office</a></span></li>
-                      <li><span><a href="#">Children’s Software</a></span></li>
-                      <li><span><a href="#">PC Games</a></span></li>
-                      <li class="last"><span><a href="#">Inject Printers</a></span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+            </div>
+            <div class="collapse navbar-collapse" id="lauraMenu">
+              <ul class="nav navbar-nav navbar-right navbar-border">
+                <li class="active"><a href="#main-header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col-2">
-        <div class="indent">
-          <div class="title"><img src="images/2page-title1.gif" alt="" /></div>
-          <p class="indent1">This is an &quot;About Us&quot; page. You are supposed to fill it with some information on your website or your company. People usually write about history of the company or about the website - why it was created, when, etc. If there are more than one person who supports the website you may consider writning about each memeber of your team.</p>
-        </div>
-        <div class="box">
-          <div class="border-top">
-            <div class="border-right">
-              <div class="border-bot">
-                <div class="border-left">
-                  <div class="inner">
-                    <div class="title"><img src="images/2page-title2.gif" alt="" /></div>
-                    <ul class="list1">
-                      <li><img src="images/2page-img1.jpg" alt="" />
-                        <h3>Team Member One</h3>
-                        <p>He is supposed to be the most important member of your team. Ususally this is the person who started the website. Maybe it is worth to write why he made such a desicion, what inspired him and what are his plans for the future.</p>
-                      </li>
-                      <li><img src="images/2page-img2.jpg" alt="" />
-                        <h3>Another Team Member</h3>
-                        <p>We are completly lost on what he's responsible for but we hope that you know it ;) We also hope that you will tell it to the rest of the world including us by placing some real text here. If this person has his own website this is a good place to link to it....</p>
-                      </li>
-                      <li><img src="images/2page-img3.jpg" alt="" />
-                        <h3>Another One Team Member</h3>
-                        <p>We are completly lost on what he's responsible for but we hope that you know it ;) We also hope that you will tell it to the rest of the world including us by placing some real text here. If this person has his own website this is a good place to link to it...</p>
-                      </li>
-                      <li class="last"><img src="images/2page-img4.jpg" alt="" />
-                        <h3>Another One Team Member</h3>
-                        <p>We are completly lost on what he's responsible for but we hope that you know it ;) We also hope that you will tell it to the rest of the world including us by placing some real text here. If this person has his own website this is a good place to link to it...</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+        </nav>
+      </header>
+      <div class="wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 wow fadeIn delay-05s">
+              <div class="banner-text">
+                <h2>Hi, I am <span>Abhilash Eshwar</span></h2>
+                <p>A Creative hardware expert <br>& Designer</p>
+              </div>
+              <div class="overlay-detail text-center">
+                <a href="#about"><i class="fa fa-angle-down"></i></a>
               </div>
             </div>
           </div>
@@ -99,16 +65,31 @@
       </div>
     </div>
   </div>
-  <!-- footer -->
-
-{% endblock %}
-  
-  <div id="footer">
-    <div class="indent">
-      <div class="fleft">Copyrights - PC Doctor</div>
-      <div class="fright">Designed by: <a href="http://dchunters.pythonanywhere.com/"></a> DC Hunters</div>
+  <section id="about" class="section-padding wow fadeIn delay-05s">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-right">
+          <h2 class="title-text">
+            Meet<br><span class="deco">Abhilash</span> Eshwar
+          </h2>
+        </div>
+        <div class="col-md-6 text-left">
+          <div class="about-text">
+            <p>PC Doctor founded in 2017, the company offers coputer hardware services and installation of CCTV. We provide both onsite and telephonic sevices with best quality and competitive price.  </p>
+            <p>&nbsp;</p>
+            <p>We understand your business needs. We specialize in business sales; whether you’re looking to purchase something today, or you’re looking for a consultant, we can help. Whether your company is large or small, we work to build a solution that fits both your budget and your needs.</p>
+            <p>&nbsp;</p>
+            <ul class="abt-list">
+              <li>- Our Commitment is to Excellence.</li>
+              <li>- Quality and on-time services.</li>
+              <li>- Ask the experts.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<div style="width:600px; position:relative;left:50%;margin-left:-300px; font-size:12px; text-align:center"><a href="http://www.kvchost.com"><img src="http://www.kvchost.com/images/logo/tlogo.png" alt="WEB HOSTING"></a> <a href="http://www.kvchost.com/resellerhost/reseller-hosting.html">reseller web hosting</a> by KVCHOST.COM</div></body>
+  </section>
+
+</body>
+
 </html>
