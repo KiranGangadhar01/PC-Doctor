@@ -9,14 +9,22 @@
   <title>Offer-Zone</title>
 
   <!-- Bootstrap -->
-  <link href="{% static 'css-blog/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'css-blog/css/font-awesome.min.css' %}" />
-  <link rel="stylesheet" href="{% static 'css/css/font-awesome.css' %}" />
-  <link href="{% static 'css-blog/css/default.css' %}" rel="stylesheet" />
-  <link rel="stylesheet" href="{% static 'css-blog/css/animate.css' %}" />
+
+  <!-- Alternative to Bootstrap 3 Glyphicons -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Optional theme -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link href="{% static 'css/css-blog/bootstrap.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/css-blog/font-awesome.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/css-blog/font-awesome.css' %}" />
+  <link href="{% static 'css/css-blog/default.css' %}" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/css-blog/animate.css' %}" />
   <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="{% static 'css-blog/css/isotope.css' %}" media="screen" />
-  <link rel="stylesheet" href="{% static 'css-blog/css/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/css-blog/isotope.css' %}" media="screen" />
+  <link rel="stylesheet" href="{% static 'css/css-blog/style.css' %}">
   <!-- =======================================================
     Theme Name: Hidayah
     Theme URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
@@ -38,12 +46,21 @@
             <div class="dropdown">
               <ul class="nav nav-pills">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="{% url 'basic_app:about-us' %}">About Us</a></li>
                 <li class="active"><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li>{% if user.is_authenticated %}
+                  <a href="{% url 'logout' %}">Log out</a>
+                  <a >Welcome: {{ user.username }}</a>
+                {% else %}
+                  <a class="nav-item nav-link" href="{% url 'login' %}" aria-label="Login">
+                    <span class="fa fa-user" aria-hidden="true"></span></a>
+                {% endif %}</li>
               </ul>
             </div>
+
           </div>
+
         </div>
       </div>
     </div>
