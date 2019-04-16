@@ -8,9 +8,10 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
+    image = models.ImageField(blank=True, upload_to='static/offers',)
 
     def get_absolute_url(self):
-        return reverse("post_detail", kwargs={'pk':self.pk})
+        return reverse("basic_app:post_detail", kwargs={'pk':self.pk})
 
     def __str__(self):
         return self.title
