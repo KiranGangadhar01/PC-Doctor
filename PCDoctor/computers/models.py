@@ -4,11 +4,11 @@ from django.urls import reverse
 
 # Create your models here.
 class Post(models.Model):
-    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    author = models.CharField(max_length=200)
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
-    image = models.ImageField(blank=True, upload_to='static/offers',)
+    image = models.ImageField(blank=True, upload_to='offers',)
 
     def get_absolute_url(self):
         return reverse("basic_app:post_detail", kwargs={'pk':self.pk})
