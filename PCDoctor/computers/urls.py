@@ -10,4 +10,5 @@ urlpatterns = [
     path('blog/', views.BlogView.as_view(), name='blog'),
     path('post/new',views.CreatePostView.as_view(),name='post_new'),
     path('post/<int:pk>',views.PostDetailView.as_view(), name='post_detail'),
+    path('contact-us/',views.contact_email, name='contact-us'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -47,8 +47,8 @@
               <ul class="nav nav-pills">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="{% url 'basic_app:about-us' %}">About Us</a></li>
-                <li class="active"><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="{% url 'basic_app:blog' %}">Blog</a></li>
+                <li><a href="{% url 'basic_app:contact-us' %}">Contact</a></li>
                 <li>{% if user.is_authenticated %}
                   <a class="nav-item nav-link" href="{% url 'basic_app:post_new' %}">New Post</a>
                   <a href="{% url 'logout' %}">Log out</a>

@@ -116,8 +116,20 @@ USE_L10N = True
 USE_TZ = True
 
 
+#Email setup
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'kiran.gangadhar.01@gmail.com'
+EMAIL_HOST_PASSWORD = 'Bangalore1!'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
+
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
